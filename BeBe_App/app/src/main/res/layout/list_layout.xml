@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pulse"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView_date"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_below="@+id/textView_title"
+            android:layout_toEndOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1" />
+
+        <TextView
+            android:text="BPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:allowUndo="false"
+            android:id="@+id/textView5"
+            android:textSize="20dp"
+            android:layout_below="@+id/heartimage"
+            android:layout_toRightOf="@+id/textView_date"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:id="@+id/textView_title"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView_date"
+            android:layout_alignEnd="@+id/textView_date" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/heartimage"
+            android:src="@drawable/heart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerInParent="false"
+            android:layerType="none"
+            android:keepScreenOn="false"
+            android:hapticFeedbackEnabled="false"
+            android:longClickable="false"
+            android:nestedScrollingEnabled="false"
+
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_alignRight="@+id/textView5"
+            android:layout_alignEnd="@+id/textView5" />
+    </RelativeLayout>
+
+</RelativeLayout>

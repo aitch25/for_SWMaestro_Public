@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yang.bebe.BPM.BabyConditionFragment1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"></LinearLayout>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp">
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/relativeLayout">
+
+                    <ProgressBar
+                    android:id="@+id/circularProgressbar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="#FF4081"
+                    android:max="150"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular"
+                    android:layout_width="500dp"
+                    android:layout_height="500dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:secondaryProgress="150"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <TextView
+                            android:textSize="30dp"
+                            android:id="@+id/textView1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignTop="@+id/heartimage"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:text="BPM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:allowUndo="false"
+                            android:paddingEnd="10dp"
+                            android:paddingLeft="10dp"
+                            android:layout_alignLeft="@+id/heartimage"
+                            android:layout_alignStart="@+id/heartimage"
+                            android:layout_below="@+id/heartimage" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/heartimage"
+                            android:src="@drawable/heart"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignWithParentIfMissing="false"
+                            android:layout_centerInParent="false"
+                            android:layerType="none"
+                            android:keepScreenOn="false"
+                            android:hapticFeedbackEnabled="false"
+                            android:longClickable="false"
+                            android:nestedScrollingEnabled="false"
+                            android:layout_marginTop="68dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@+id/textView1"
+                            android:layout_alignEnd="@+id/textView1" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/l">
+
+            </LinearLayout>
+
+            <Button
+                android:text="Button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="0dp"
+                android:layout_above="@+id/l"
+                android:layout_toRightOf="@+id/relativeLayout"
+                android:layout_toEndOf="@+id/relativeLayout" />
+
+            <com.github.mikephil.charting.charts.CombinedChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="244dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvBabyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baby's Name" />
+
+        <EditText
+            android:id="@+id/etBabyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_baby_name" />
+
+        <TextView
+            android:id="@+id/tvBioSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Sex" />
+
+        <Spinner
+            android:id="@+id/spBioSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/biological_sex_array"
+            android:overScrollMode="always" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBabyHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baby's Height" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/tvBabyHeight_edit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/new_baby_height" />
+
+            <TextView
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="cm"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvBabyHeight_edit"
+                android:layout_toEndOf="@+id/tvBabyHeight_edit"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvBabyWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baby's Weight" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/tvBabyWeight_edit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/new_baby_weight" />
+
+            <TextView
+
+                android:id="@+id/textView7"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="kg"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/tvBabyWeight_edit"
+                android:layout_alignBottom="@+id/tvBabyWeight_edit"
+                android:layout_toRightOf="@+id/tvBabyWeight_edit"
+                android:layout_toEndOf="@+id/tvBabyWeight_edit"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_birthday"
+            android:id="@+id/tvBirthday"
+            />
+
+        <DatePicker
+            android:id="@+id/dpBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            tools:calendarViewShown="false"
+            tools:targetApi="21" />
+
+        <TimePicker
+            android:id="@+id/tpBirthTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            tools:targetApi="21"
+            />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:id="@+id/lvAddChildControls"
+
+            />
+
+    </LinearLayout>
+</ScrollView>

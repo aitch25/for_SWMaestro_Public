@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="Thermometer">
+
+
+        <attr name="therm_color" format="color" />
+        <attr name="text" format="reference|string" />
+        <attr name="textColor" format="reference|integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="GalleryTheme">
+        <attr name="android:galleryItemBackground"/>
+    </declare-styleable>
+    <declare-styleable name="WaterWave">
+        <attr name="above_wave_color" format="color"/>
+        <attr name="blow_wave_color" format="color"/>
+        <attr name="progress" format="integer"/>
+        <attr name="wave_length" format="enum">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr name="wave_height" format="enum">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr name="wave_hz" format="enum">
+            <enum name="fast" value="1"/>
+            <enum name="normal" value="2"/>
+            <enum name="slow" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FeedingBottleView">
+        <attr name="machineColor" format="color"/>
+        <attr name="holeRadius" format="dimension"/>
+        <attr name="top_view_height" format="dimension"/>
+        <attr name="bottom_view_height" format="dimension"/>
+        <attr name="middle_view_height" format="dimension"/>
+    </declare-styleable>
+
+</resources>

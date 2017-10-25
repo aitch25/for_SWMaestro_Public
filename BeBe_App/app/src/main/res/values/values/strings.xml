@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Babycare</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="minute_ago">\u0020minute(s) ago</string>
+    <string name="hour_ago">\u0020hour(s) ago</string>
+    <string name="day_ago">\u0020day(s) ago</string>
+    <string name="BpmString">Bpm</string>
+    <string name="time">time</string>
+    <string name="average">average</string>
+
+</resources>

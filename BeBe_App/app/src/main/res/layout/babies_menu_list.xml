@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip"
+    android:minHeight="75dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvBabiesHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvBabyBioSex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvBabyBirthday"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>
